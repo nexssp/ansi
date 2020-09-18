@@ -1,0 +1,15 @@
+{
+  "name": "@nexssp/ansi",
+  "version": "1.0.3",
+  "description": "Ansi library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ansi",
+    "colors"
+  ],
+  "author": "mapoart@gmail.com",
+  "license": "MIT"
+}
