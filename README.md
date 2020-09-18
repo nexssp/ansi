@@ -2,7 +2,7 @@
 
 ## Available colors
 
-![Available colors](/nexssp_ansi_colors.png)
+![Available colors](https://raw.githubusercontent.com/nexssp/ansi/master/nexssp_ansi_colors.png)
 
 **bold**, **underscore**, **grey**, **greyBG** **purple**, **purpleBG**, **red**, **redBG** **redBG2**, **green**, **greenBG**, **greenBG2** **blue**, **blueBG**, **blueBG2**, **yellow**, **yellowBG**, **yellowBG2**, **magenta**, **magentaBG**, **magentaBG2**, **cyan**, **cyanBG**, **orangeBG**, **white**, **whiteBG**, **black**, **blackBG**
 
