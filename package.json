@@ -11,8 +11,18 @@
     "test": "jest --env=node --verbose ./tests/"
   },
   "files": [
-    "dist/"
+    "dist/**/*",
+    "nexssp_ansi_colors.png"
   ],
+  "standard": {
+    "globals": [
+      "myVar1",
+      "myVar2"
+    ],
+    "ignore": [
+      "./dist/*"
+    ]
+  },
   "keywords": [
     "ansi",
     "colors",
@@ -28,6 +38,7 @@
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
     "prettier-eslint-cli": "^5.0.0",
+    "standard": "*",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
