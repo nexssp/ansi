@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ansi library",
   "main": "dist/ansi.js",
   "scripts": {
