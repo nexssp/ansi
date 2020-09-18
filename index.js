@@ -38,9 +38,7 @@ const colors = {
   blackBG: (...args) => ansi("40m")(...args),
 };
 
-module.exports = Object.assign({}, colors);
-
-Object.assign(module.exports, {
+const other = {
   // Cursor moves
   up: (...args) => ansi("1A")(...args),
   down: (...args) => ansi("1B")(...args),
@@ -49,7 +47,9 @@ Object.assign(module.exports, {
   saveCursor: (...args) => ansi("s")(...args),
   restoreCursor: (...args) => ansi("u")(...args),
   clearScreen: (...args) => ansi("2J")(...args),
-});
+};
+
+module.exports = Object.assign({}, colors, other);
 
 module.exports.colors = Object.keys(colors);
 module.exports.ansi = ansi;
