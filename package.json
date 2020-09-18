@@ -2,14 +2,36 @@
   "name": "@nexssp/ansi",
   "version": "1.0.3",
   "description": "Ansi library",
-  "main": "index.js",
+  "main": "dist/ansi.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress",
+    "example1": "node ./examples/example-colors.js",
+    "example2": "node ./examples/example-other.js",
+    "prepublish": "webpack --progress",
+    "test": "jest --env=node --verbose ./tests/"
   },
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "ansi",
-    "colors"
+    "colors",
+    "terminal"
   ],
   "author": "mapoart@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "core-js": "^2.5.7",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
