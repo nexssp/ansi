@@ -4,10 +4,10 @@
   "description": "Ansi library",
   "main": "dist/ansi.js",
   "scripts": {
-    "build": "webpack --progress",
+    "webpack": "webpack --progress",
     "example1": "node ./examples/example-colors.js",
     "example2": "node ./examples/example-other.js",
-    "prepublish": "webpack --progress",
+    "prepublish": "npm test && webpack --progress",
     "test": "jest --env=node --verbose ./tests/"
   },
   "files": [
