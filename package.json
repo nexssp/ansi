@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ansi library",
   "main": "dist/ansi.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "example1": "node ./examples/example-colors.js",
     "example2": "node ./examples/example-other.js",
     "prepublish": "npm test && webpack --progress",
-    "test":"nyc --reporter=text mocha"
+    "test": "nyc --reporter=text mocha"
   },
   "files": [
     "dist/**/*",
