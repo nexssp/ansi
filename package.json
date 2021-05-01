@@ -1,27 +1,26 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Ansi library",
   "main": "dist/ansi.js",
+  "homepage": "https://nexss.com",
   "scripts": {
-    "webpack": "webpack --progress",
     "example1": "node ./examples/example-colors.js",
     "example2": "node ./examples/example-other.js",
-    "prepublish": "npm test && webpack --progress",
-    "test": "jest --env=node --verbose ./tests/"
+    "prepublish": "npm run build",
+    "build": "npx @nexssp/min@1.0.6",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist/**/*",
     "nexssp_ansi_colors.png"
   ],
-  "standard": {
-    "globals": [
-      "myVar1",
-      "myVar2"
-    ],
-    "ignore": [
-      "./dist/*"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nexssp/ansi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexssp/ansi/issues"
   },
   "keywords": [
     "ansi",
@@ -29,20 +28,5 @@
     "terminal"
   ],
   "author": "mapoart@gmail.com",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-loader": "^8.1.0",
-    "core-js": "^2.5.7",
-    "jest": "^26.4.2",
-    "prettier": "^2.1.2",
-    "prettier-eslint-cli": "^5.0.0",
-    "standard": "*",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  },
-  "jest": {
-    "testEn vironment": "node"
-  }
+  "license": "MIT"
 }
