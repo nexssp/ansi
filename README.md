@@ -2,7 +2,7 @@
 
 ## Available colors
 
-![Available colors](https://raw.githubusercontent.com/nexssp/ansi/master/nexssp_ansi_colors.png)
+![image](https://user-images.githubusercontent.com/53263666/116795666-efede280-aad6-11eb-8d29-fc5f02cc5739.png)
 
 **bold**, **underscore**, **grey**, **greyBG** **purple**, **purpleBG**, **red**, **redBG** **redBG2**, **green**, **greenBG**, **greenBG2** **blue**, **blueBG**, **blueBG2**, **yellow**, **yellowBG**, **yellowBG2**, **magenta**, **magentaBG**, **magentaBG2**, **cyan**, **cyanBG**, **orangeBG**, **white**, **whiteBG**, **black**, **blackBG**
 
@@ -16,12 +16,14 @@
 ## Examples
 
 ```js
-const ansi = require('@nexssp/ansi');
+const ansi = require("@nexssp/ansi");
 // colors list
 console.log(ansi.colors);
-console.log(ansi.red('My red text'));
+console.log(ansi.red("My red text"));
 
 // or
-const { red, blue, yellowBG, bold } = require('@nexssp/ansi');
-console.log(red('my test' + yellowBG(bold('red bold and yellow background'))));
+const { red, blue, yellowBG, bold } = require("@nexssp/ansi");
+console.log(red("my test" + yellowBG(bold("red bold and yellow background"))));
 ```
+
+![image](https://user-images.githubusercontent.com/53263666/116795709-3fcca980-aad7-11eb-8c8a-7af52682f150.png)

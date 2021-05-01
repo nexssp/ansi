@@ -1,15 +1,15 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Ansi library",
   "main": "dist/ansi.js",
   "homepage": "https://nexss.com",
   "scripts": {
-    "example1": "node ./examples/example-colors.js",
-    "example2": "node ./examples/example-other.js",
+    "example1": "node ./tests/example-colors.js",
+    "example2": "node ./tests/example-other.js",
     "prepublish": "npm run build",
     "build": "npx @nexssp/min@1.0.6",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./tests/example-colors.js"
   },
   "files": [
     "dist/**/*",
