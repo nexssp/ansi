@@ -1,5 +1,9 @@
 # @nexssp/ansi
 
+## New cursor functions
+
+- now you can do **up**, **left**, **right**, **down** with the number of lines/columns.. eg. **ansi.up(5)**
+
 ## Available colors
 
 ![image](https://user-images.githubusercontent.com/53263666/116795666-efede280-aad6-11eb-8d29-fc5f02cc5739.png)

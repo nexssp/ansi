@@ -2,10 +2,12 @@
  * Basic ansi library
  */
 
-const ansi = (color, bold) => (...args) =>
-  `${bold ? "\x1b[1m" : ""}${color ? "\x1b[" + color : ""}${args.join(
-    ""
-  )}\x1b[0m`;
+const ansi =
+  (color, bold) =>
+  (...args) =>
+    `${bold ? "\x1b[1m" : ""}${color ? "\x1b[" + color : ""}${args.join(
+      ""
+    )}\x1b[0m`;
 
 const colors = {
   bold: (...args) => ansi("1m")(...args),
@@ -40,10 +42,14 @@ const colors = {
 
 const other = {
   // Cursor moves
-  up: (...args) => ansi("1A")(...args),
-  down: (...args) => ansi("1B")(...args),
-  right: (...args) => ansi("1C")(...args),
-  left: (...args) => ansi("1D")(...args),
+  up: (lines = 1) => ansi(`${lines}A`)(),
+  down: (lines = 1) => ansi(`${lines}B`)(),
+  right: (lines = 1) => ansi(`${lines}C`)(),
+  left: (lines = 1) => ansi(`${lines}D`)(),
+  nextLine: (...args) => ansi("1E")(...args),
+  prevLine: (...args) => ansi("1F")(...args),
+  clearLine: () => ansi("2K")(),
+  clearLineAfterCursor: () => ansi("K")(),
   saveCursor: (...args) => ansi("s")(...args),
   restoreCursor: (...args) => ansi("u")(...args),
   clearScreen: (...args) => ansi("2J")(...args),

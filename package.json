@@ -1,8 +1,8 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ansi library",
-  "main": "dist/ansi.js",
+  "main": "src/ansi.js",
   "homepage": "https://nexss.com",
   "scripts": {
     "example1": "node ./tests/example-colors.js",
@@ -12,7 +12,7 @@
     "test": "node ./tests/example-colors.js"
   },
   "files": [
-    "dist/**/*",
+    "src/**/*",
     "nexssp_ansi_colors.png"
   ],
   "repository": {
