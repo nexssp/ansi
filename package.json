@@ -14,8 +14,8 @@
     "test": "node ./tests/example-colors.js"
   },
   "files": [
-    "./index.*",
-    "nexssp_ansi_colors.png"
+    "index.mjs",
+    "index.js"
   ],
   "repository": {
     "type": "git",
