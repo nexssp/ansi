@@ -10,12 +10,16 @@ const ansi =
     )}\x1b[0m`;
 
 const colors = {
+  reset: (...args) => ansi("0m")(...args),
   bold: (...args) => ansi("1m")(...args),
-  grey: (...args) => ansi("90m")(...args),
-  greyBG: (...args) => ansi("100m")(...args),
+  italic: (...args) => ansi("3m")(...args),
+  underscore: (...args) => ansi("4m")(...args),
+  strikethrough: (...args) => ansi("9m")(...args),
+  inverse: (...args) => ansi("7m")(...args),
+  gray: (...args) => ansi("90m")(...args),
+  grayBG: (...args) => ansi("100m")(...args),
   purple: (...args) => ansi("35m")(...args),
   purpleBG: (...args) => ansi("45m")(...args),
-  underscore: (...args) => ansi("4m")(...args),
   red: (...args) => ansi("31m")(...args),
   redBG: (...args) => ansi("41m")(...args),
   redBG2: (...args) => ansi("101m")(...args),

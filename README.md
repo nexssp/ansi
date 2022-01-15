@@ -12,11 +12,11 @@ import ansi from "@nexssp/ansi";
 
 - now you can do **up**, **left**, **right**, **down** with the number of lines/columns.. eg. **ansi.up(5)**
 
-## Available colors
+## Available colors and functions
 
-![image](https://user-images.githubusercontent.com/53263666/116795666-efede280-aad6-11eb-8d29-fc5f02cc5739.png)
+![image](https://user-images.githubusercontent.com/53263666/149625041-bd8a2769-858d-4e55-8dc0-7130d6772617.png)
 
-**bold**, **underscore**, **grey**, **greyBG** **purple**, **purpleBG**, **red**, **redBG** **redBG2**, **green**, **greenBG**, **greenBG2** **blue**, **blueBG**, **blueBG2**, **yellow**, **yellowBG**, **yellowBG2**, **magenta**, **magentaBG**, **magentaBG2**, **cyan**, **cyanBG**, **orangeBG**, **white**, **whiteBG**, **black**, **blackBG**
+reset, **bold**, _italic_, **underscore**, ~~strikethrough~~, inverse, **gray**, **grayBG** **purple**, **purpleBG**, **red**, **redBG** **redBG2**, **green**, **greenBG**, **greenBG2** **blue**, **blueBG**, **blueBG2**, **yellow**, **yellowBG**, **yellowBG2**, **magenta**, **magentaBG**, **magentaBG2**, **cyan**, **cyanBG**, **orangeBG**, **white**, **whiteBG**, **black**, **blackBG**
 
 ## Other functions
 
@@ -38,4 +38,4 @@ const { red, blue, yellowBG, bold } = require("@nexssp/ansi");
 console.log(red("my test" + yellowBG(bold("red bold and yellow background"))));
 ```
 
-![image](https://user-images.githubusercontent.com/53263666/116795709-3fcca980-aad7-11eb-8c8a-7af52682f150.png)
+![image](https://user-images.githubusercontent.com/53263666/149625089-d97a44fd-8236-4a83-8de9-494c03545410.png)
