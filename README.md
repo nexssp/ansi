@@ -1,5 +1,13 @@
 # @nexssp/ansi
 
+**15.01.2022 Upgrade** - Now works also with `import` as module.
+
+```js
+const ansi = require("@nexssp/ansi");
+// or
+import ansi from "@nexssp/ansi";
+```
+
 ## New cursor functions
 
 - now you can do **up**, **left**, **right**, **down** with the number of lines/columns.. eg. **ansi.up(5)**
@@ -20,7 +28,7 @@
 ## Examples
 
 ```js
-const ansi = require("@nexssp/ansi");
+const ansi = require("@nexssp/ansi"); // OR import ansi from "@nexssp/ansi";
 // colors list
 console.log(ansi.colors);
 console.log(ansi.red("My red text"));
