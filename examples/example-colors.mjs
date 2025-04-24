@@ -1,4 +1,4 @@
-import ansi from "../index.mjs";
+import ansi from "../";
 
 console.log(ansi.black(ansi.blueBG("All available colors:")));
 

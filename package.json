@@ -16,7 +16,7 @@
     "test": "node ./examples/example-colors.js"
   },
   "files": [
-    "index.mjs",
+    "index.esm.js",
     "index.js",
     "index.d.ts"
   ],
