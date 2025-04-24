@@ -1,6 +1,6 @@
 {
   "name": "@nexssp/ansi",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Ansi, terminal colors library",
   "exports": {
     "import": "./index.esm.js",
